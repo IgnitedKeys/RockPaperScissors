@@ -1,0 +1,85 @@
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: #ff7c7c transparent #84ff8d transparent;
+    border-radius: 50%;
+    animation: spin-anim 2s linear infinite;
+}
+
+
+body {
+    background-color: #9afaff;
+    font-family: 'Amatic SC', cursive;
+}
+
+button {
+    font-size: 2em;
+    background-color: #ffb680;
+    border: none;
+    color: #333; 
+    border-radius: 10px;
+    padding: 5px;
+    width: 150px;
+    margin: 10px;
+    font-family: 'Amatic SC', cursive;
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+
+}
+
+
+.userDisplay ,
+.computerDisplay {
+   width: 120px;
+   height: 120px;
+   font-size: 6em;
+   padding: 50px;
+   text-align: center;
+   margin: 20px;
+}
+
+.resultDisplay {
+    font-size: large;
+    height: 50px;
+    font-size: 2em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.winner {
+    background-color: #84ff8d;
+    border-radius: 50%;
+}
+
+.loser {
+    background-color: #ff7c7c;
+    border-radius: 50%;
+}
+
+.tie {
+    background-color: #ffeb88;
+    border-radius: 50%;
+}
+
